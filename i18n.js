@@ -92,6 +92,10 @@
     if (localizedHome && meta) meta.content = strings.description || strings.heroLead;
     document.querySelectorAll("[data-i18n]").forEach(element => { if (values[element.dataset.i18n]) element.textContent = values[element.dataset.i18n]; });
     document.querySelectorAll("[data-i18n-html]").forEach(element => { if (values[element.dataset.i18nHtml]) element.innerHTML = values[element.dataset.i18nHtml]; });
+    document.querySelectorAll("[data-shot]").forEach(image => {
+      image.src = `images/${code}/${image.dataset.shot}.jpg`;
+      image.alt = strings.gameTitle;
+    });
     const navLabels = {"./": strings.nav[0], "support.html": strings.nav[2], "contact.html": strings.nav[3], "privacy.html": strings.nav[4]};
     document.querySelectorAll(".nav-links a, footer nav a").forEach(link => { const href = link.getAttribute("href"); if (navLabels[href]) link.textContent = navLabels[href]; });
     document.querySelectorAll("[data-language-picker]").forEach(select => { select.value = code; select.setAttribute("aria-label", strings.language); });
