@@ -14,10 +14,10 @@ Static, buildless GitHub Pages site. No JavaScript application, cookies, analyti
 All internal links are relative. Canonical metadata, `robots.txt` and `sitemap.xml` use the final GitHub Pages address:
 
 ```text
-https://palmares.github.io/
+https://palmaresgame.github.io/
 ```
 
-The publishing repository must therefore be named `palmares.github.io` under the `palmares` GitHub account.
+The publishing repository must therefore be named `palmaresgame.github.io` under the `palmaresgame` GitHub account.
 
 ## Local preview
 
@@ -31,7 +31,7 @@ Open `http://localhost:8080/` and verify Home, Support, Contact, Privacy, Terms 
 
 ## GitHub Pages
 
-Publish the contents of `site/` at the root of the dedicated public repository `palmares/palmares.github.io`. In that repository choose **Settings → Pages → Deploy from a branch → `main` → `/ (root)`**. `.nojekyll` prevents Jekyll processing.
+Publish the contents of `site/` at the root of the dedicated public repository `palmaresgame/palmaresgame.github.io`. In that repository choose **Settings → Pages → Deploy from a branch → `main` → `/ (root)`**. `.nojekyll` prevents Jekyll processing.
 
 After the public URL is live:
 
@@ -42,4 +42,4 @@ After the public URL is live:
 
 ## Keeping it accurate
 
-The privacy and support pages describe the current app: local saves, StoreKit, Game Center entitlement, no developer server, no analytics, no ads and no tracking SDKs. Update the pages and App Store privacy answers before adding iCloud, notifications, analytics, crash reporting, advertising, accounts or a backend.
+The privacy and support pages describe the current app: local-first saves with optional private CloudKit and iCloud KVS sync, StoreKit, Game Center achievements, no developer server, no analytics, no ads and no tracking SDKs. Update the pages and App Store privacy answers before adding analytics, crash reporting, advertising, accounts or a backend.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://palmares.github.io/sitemap.xml
+Sitemap: https://palmaresgame.github.io/sitemap.xml
